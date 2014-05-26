@@ -1,0 +1,49 @@
+.notice {
+	background-color: #FFFFFF;
+	border: 1px #669933 solid;
+	border-radius: 5px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.notice .notice-title {
+	font-size: 14pt;
+	font-weight: bold;
+	color: #330000;
+	text-align: center;
+}
+
+.search {
+}
+
+@media (max-width: 320px) {
+	.carousel {
+		height: 160px;
+	}
+}
+
+@media (min-width: 321px) {
+	.carousel {
+		height: 220px;
+	}
+}
+
+@media (min-width: 481px) {
+	.carousel {
+		height: 280px;
+	}
+}
+
+@media (min-width: 769px) {
+	.carousel {
+		height: 340px;
+	}
+
+}
+
+@media (min-width: 1224px) {
+	.carousel {
+		height: 400px;
+	}
+
+}
