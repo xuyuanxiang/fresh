@@ -21,6 +21,13 @@ define(["backbone", "../../collection/ChannelCollection", "text!../../../../page
 				slidesToShow : 4,
 				slidesToScroll : 1
 			});
+		},
+		events : {
+			'click .navbar-item' : "navChange"
+		},
+		navChange : function(event) {
+			$('.active').removeClass('active');
+			$(event.currentTarget).parent().addClass('active');
 		}
 	});
 	return HomeView;

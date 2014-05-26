@@ -1,11 +1,11 @@
 <% _.each(channels,function(channel){ %>
 	<% if(channel.active) { %>
 		<div class="active">
-			<a href="<%= channel.path %>">
+			<a class="navbar-item" href="<%= channel.path %>">
 				<img src="<%= channel.activeIconPath %>" alt="<%= channel.title %>"/>
 	<% } else { %>
 		<div>
-			<a href="<%= channel.path %>">
+			<a class="navbar-item" href="<%= channel.path %>">
 				<img src="<%= channel.inactiveIconPath %>" alt="<%= channel.title %>"/>
 	<% } %>
 			</a>

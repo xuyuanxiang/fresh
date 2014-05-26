@@ -6,15 +6,15 @@ define(["backbone", "../view/HomeView", "../view/advertisement/AdvertisementView
 		},
 		defaultCtrl : function() {
 			var homeView = new HomeView({
-				el : $('.container-fluid')
+				el : $('header~div')
 			});
 			homeView.render();
 			var advertisementView = new AdvertisementView({
-				el : $('.carousel')
+				el : $('header~div .carousel')
 			});
 			advertisementView.render();
 			var noticeView = new NoticeView({
-				el : $('.notice')
+				el : $('header~div .notice')
 			});
 			noticeView.render();
 		}
